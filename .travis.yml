@@ -4,6 +4,9 @@ language: java
 
 jdk:
   - oraclejdk8
+env:
+  global:
+    - JAVA_TOOL_OPTIONS="-Xmx512m"
 
 script: "mvn cobertura:cobertura"
 
